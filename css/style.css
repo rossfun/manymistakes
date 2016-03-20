@@ -7,9 +7,11 @@ body{
 	background-attachment: fixed;
 	font-family: arial;
 }
+
 .main{
 	background: rgba(255,255,255,0.75);
-	width: 600px;
+/* width can be made to rescale according to screen but setting upper bound */
+	max-width: 600px;
 	margin: 0 auto;
 	padding:30px;
 	border-radius: 20px;
@@ -17,19 +19,20 @@ body{
 }
 
 h1{
+	font-family: 'Molle', cursive;
 	text-align: center;
 	border-bottom: 2px solid black;
 	padding-bottom: 20px;
 	text-shadow: 5px 5px 0 rgb(220,220,220);
 }
+
 h2{
 	text-align: center;
 	font-weight: normal;
 	letter-spacing: 10px;
 	text-transform: uppercase;
-	font-size: 20px
+	font-size: 20px;
 }
-
 
 img{
 	display: block;
@@ -37,6 +40,7 @@ img{
 	border: 20px dotted;
 	border-radius: 20% 40%;
 }
+
 p,
 ul,
 ol{
@@ -44,11 +48,13 @@ ol{
 	list-style: none;
 	padding-left: 0;
 }
+
 a{
 	font-weight: bold;
 	text-decoration: none;
 	color: blue;
 }
+
 a:hover{
 	color: red;
 	text-decoration: underline;
